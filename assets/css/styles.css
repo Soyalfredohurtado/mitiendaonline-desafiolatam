@@ -1,0 +1,137 @@
+.menu {
+    grid-area: menuBox;
+    background-color: hsl(0, 98%, 18%);
+    color: #fff
+}
+
+.contenido {
+    grid-area: contenidoBox;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+@media (min-width:768px) {
+    .menu {
+        height: 100%;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-template-areas: 'menuBox contenidoBox';
+    }
+}
+
+/* --------------------------------------- Menú ----------------------------------------------*/
+ul {
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-decoration: none
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+    transition: 0.8s;
+}
+
+a:hover {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+/*----------------------------------------------- BOX PRODUCT-----------------------------------------*/
+
+#boxProductos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.boxProducto {
+    margin-bottom: 20px;
+
+}
+
+
+.productoImg {
+    width: 250px;
+}
+
+@media (max-width:768px) {
+    .menu {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas:
+            'menuBox'
+            'contenidoBox';
+    }
+
+    .boxProducto {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .boxProductoImg img {
+        width: 100%;
+    }
+}
+
+.boxProductoNombre {
+    color: hsl(0, 98%, 18%);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/*----------------------------------------- Buscador -------------------------------------------------------*/
+
+.divInput {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input {
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding: 10px 80px;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+
+/*-------------------------------------------------- Quines Somos?------------------------------------------------------------*/
+
+#boxQuienesSomos {
+    padding: 0px 20px 20px 20px;
+}
+
+
+/*---------------------------------------------- Footer --------------------------------------------------------*/
+.boxContacto {
+    margin: 0px;
+    padding: 20px;
+    background: #3c3939;
+    color: #fff;
+
+}
